@@ -1,0 +1,30 @@
+{
+  "name": "untapt-assignment",
+  "version": "1.0.0",
+  "description": "untapt front end test",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -c-1",
+    "js": "rollup -c --watch",
+    "sass": "sass --watch --style=compressed ./src/sass/main.scss:./dist/css/style.min.css --scss",
+    "dev": "concurrently 'npm:sass' 'npm:js'"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "concurrently": "^4.0.1",
+    "http-server": "^0.11.1",
+    "rollup": "^0.66.6",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-terser": "^3.0.0"
+  },
+  "dependencies": {
+    "create-elem": "^1.0.5",
+    "cuid": "^2.1.4",
+    "dom-parents": "^1.1.1"
+  }
+}

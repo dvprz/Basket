@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>untapt Basket App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./dist/css/style.min.css">
+</head>
+
+<body>
+  <div id="app">
+    <div class="grocery">
+      <div class="grocery__header">
+        <div class="grid">
+          <div class="grid__column-2 text-align-center">
+            <p class="grocery__header-item font-bold">qty</p>
+          </div>
+          <div class="grid__column-10">
+            <p class="grocery__header-item font-bold">item</p>
+          </div>
+        </div>
+      </div>
+      <ul class="grocery__list"></ul>
+    </div>
+
+    <form class="form">
+      <h2 class="form__title text-align-center font-bold">Add item to shopping list</h2>
+      <div class="grid">
+        <div class="grid__column-2">
+          <input class="form__input form__input-radio text-align-center" type="number" name="qty" id="qty" step="1" min="1"
+            value="1">
+        </div>
+        <div class="grid__column-7">
+          <input class="form__input" type="text" name="item" id="item">
+        </div>
+        <div class="grid__column-3 flex">
+          <button class="form__submit font-bold" type="submit">Add</button>
+        </div>
+      </div>
+    </form>
+
+    <div class="suggested">
+      <ul class="suggested__list"></ul>
+    </div>
+  </div>
+
+  <script src="./dist/js/app.min.js"></script>
+</body>
+
+</html>

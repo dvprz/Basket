@@ -1,0 +1,42 @@
+.form {
+  margin-top: 30px;
+}
+
+.form__title {
+  font-size: 20px;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.form__input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 5px solid darken($gray, 5);
+  transition: border-bottom-color 300ms;
+
+  &:focus {
+    outline: none;
+    border-bottom-color: #00c4ff;
+  }
+}
+
+.form__input-radio {
+  padding-right: 0;
+}
+
+.form__submit {
+  width: 100%;
+  background-color: $add-color;
+  cursor: pointer;
+  padding: 10px 15px;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  margin-left: auto;
+  transition: background-color 300ms;
+
+  &:hover {
+    background-color: darken($add-color, 5);
+  }
+}

@@ -1,0 +1,83 @@
+.grocery {
+  height: 300px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:lighten($gray, 5);
+  margin-top: 30px;
+  padding-bottom: 48px;
+  border-radius: 10px;
+  border: 1px solid darken($gray, 5);
+  overflow: hidden;   
+}
+
+.grocery__header {
+  border-bottom: 2px solid darken($gray, 5); 
+  padding: 15px 0;
+}
+
+.grocery__header-item {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.grocery__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  height: 100%;
+  overflow: scroll;  
+}
+
+.grocery__item {
+  padding: 20px 0; 
+  border-bottom: 1px solid darken($gray, 5);
+}
+
+.grocery__item-quantity {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.grocery__item-title {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;  
+}
+
+.grocery__list-actions {
+  margin-left: auto;
+}
+
+.grocery__list-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+
+  i {
+    transition: color 300ms;
+  }
+}
+
+.remove {
+  &:hover i {
+    color: $remove-color
+  }
+
+  i {
+    color: lighten($remove-color, 20);
+  }
+}
+
+.purchase {
+  &:hover i {
+    color: $add-color
+  }
+
+  i {
+    color: lighten($add-color, 20);
+  }
+}

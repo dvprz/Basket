@@ -1,0 +1,18 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+@mixin column {
+  padding-left: $gutter;
+  padding-right: $gutter;
+  width: 100%;
+}
+
+@for $i from 1 through $amount-of-columns {
+  .grid__column-#{$i} {
+    @include column;
+    max-width: percentage($i / $amount-of-columns);
+  }
+}
