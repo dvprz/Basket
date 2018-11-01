@@ -3,17 +3,20 @@
 Basket lets you add food items to a list. 
 
 ## Install
+Download the repo and cd into it:
+```
+git clone https://github.com/dvprz/Basket && cd Basket
+```
 
-Install dependencies
-```js
+Install dependencies:
+```
 npm install
 ```
 
 Fire up a localhost by running:
-```js
+```
 npm start
 ```
-ADD INSTALL SECTION
 
 ## Functionality
 
